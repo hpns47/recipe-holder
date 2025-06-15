@@ -10,7 +10,7 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="manifest" href="site.webmanifest" />
+  <link rel="manifest" href="/recipe-holder/site.webmanifest">
   <style>
   body {
     font-family: 'Segoe UI', sans-serif;
@@ -138,14 +138,10 @@
 
 </head>
 <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(function() {
-        console.log('Service Worker зарегистрирован');
-      })
-      .catch(function(error) {
-        console.error('Ошибка регистрации Service Worker:', error);
-      });
+   if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/recipe-holder/service-worker.js')
+      .then(() => console.log('✅ SW зарегистрирован'))
+      .catch(err => console.error('❌ SW ошибка', err));
   }
 </script>
 <body>
