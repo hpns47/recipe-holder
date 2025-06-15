@@ -1,21 +1,22 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Recipe App",
+  "short_name": "Recipes",
+  "start_url": "/recipe-holder/",
+  "display": "standalone",
+  "theme_color": "#8d1717",
+  "background_color": "#cc7070",
   "icons": [
     {
-      "src": "/web-app-manifest-192x192.png",
+      "src": "/recipe-holder/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/web-app-manifest-512x512.png",
+      "src": "/recipe-holder/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     }
-  ],
-  "theme_color": "#8d1717",
-  "background_color": "#cc7070",
-  "display": "standalone"
+  ]
 }
